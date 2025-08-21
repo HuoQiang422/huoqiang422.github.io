@@ -1,0 +1,5 @@
+# Redirect old URLs to new ones if needed
+# /old-path/* /new-path/:splat 301
+
+# Handle 404s
+/* /404.html 404
