@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css' />
+  <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/jhlst/dist/%E4%BA%AC%E8%8F%AF%E8%80%81%E5%AE%8B%E4%BD%93v2_002/result.css' />  
+  
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>如何更新博客内容 [ 寒漓 ]</title>
+
+  <link rel="icon" href="/img/favicon.ico">
+
+
+    <meta name="author" content="寒漓">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml " title="寒漓" type="application/atom+xml">
+
+
+  
+    <link rel="stylesheet" href="/css/main.css">
+  
+
+
+<script defer>
+  document.addEventListener('visibilitychange', function () {
+  if (document.visibilityState == 'hidden') {
+      normal_title = document.title;
+      document.title = '点一下';
+  } else document.title = normal_title;
+});
+
+</script>
+  <body data-theme="light" class="notransition">
+    <script defer>
+      const body = document.body;
+      const data = body.getAttribute("data-theme");
+      const initTheme = (state) => {
+        if (state === "dark") {
+          body.setAttribute("data-theme", "dark");
+        } else if (state === "light") {
+          body.removeAttribute("data-theme");
+        } else {
+          localStorage.setItem("theme", data);
+        }
+      };
+   
+      initTheme(localStorage.getItem("theme"));
+      
+      setTimeout(() => body.classList.remove("notransition"), 75);
+    </script>
+  <div class="navbar" role="navigation">
+    <nav class="menu">
+      <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+      <label for="menu-trigger">
+        <span class="menu-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+            />
+          </svg>
+        </span>
+      </label>
+      <a id="mode">
+        <svg
+          class="mode-sunny"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 512 512"
+        >
+          <title>LIGHT</title>
+          <line
+            x1="256"
+            y1="48"
+            x2="256"
+            y2="96"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="256"
+            y1="416"
+            x2="256"
+            y2="464"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="108.92"
+            x2="369.14"
+            y2="142.86"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="369.14"
+            x2="108.92"
+            y2="403.08"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="464"
+            y1="256"
+            x2="416"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="96"
+            y1="256"
+            x2="48"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="403.08"
+            x2="369.14"
+            y2="369.14"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="142.86"
+            x2="108.92"
+            y2="108.92"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <circle
+            cx="256"
+            cy="256"
+            r="80"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+        </svg>
+        <svg
+          class="mode-moon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 512 512"
+        >
+          <title>DARK</title>
+          <line
+            x1="256"
+            y1="48"
+            x2="256"
+            y2="96"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="256"
+            y1="416"
+            x2="256"
+            y2="464"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="108.92"
+            x2="369.14"
+            y2="142.86"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="369.14"
+            x2="108.92"
+            y2="403.08"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="464"
+            y1="256"
+            x2="416"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="96"
+            y1="256"
+            x2="48"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="403.08"
+            x2="369.14"
+            y2="369.14"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="142.86"
+            x2="108.92"
+            y2="108.92"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <circle
+            cx="256"
+            cy="256"
+            r="80"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+        </svg>
+      </a>
+      <div class="trigger">
+        <div class="trigger-container">
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/"> 主页</a>
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/tags/"> 标签</a>
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/categories/"> 类别</a>
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/archives/"> 档案馆</a>
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/about/"> 关于</a>
+          
+        </div>
+      </div>
+    </nav>
+  </div>
+  <button id="toTopBtn"><i class="fa-solid fa-hand-point-up " ></i></button>
+<button id="toggleButton"><i class="fa-solid fa-chart-bar " ></i></button>
+<div id="overlay" class="overlay">
+  <div class="content">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%93%9A-Hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8D%97"><span class="toc-text">📚 Hexo博客内容更新指南</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%AF-%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E7%AB%A0%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-text">🎯 创建新文章的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E4%BD%BF%E7%94%A8Hexo%E5%91%BD%E4%BB%A4%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-text">方法一：使用Hexo命令（推荐）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%9A%E6%89%8B%E5%8A%A8%E5%88%9B%E5%BB%BA"><span class="toc-text">方法二：手动创建</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%9D-%E6%96%87%E7%AB%A0Front-Matter%E9%85%8D%E7%BD%AE"><span class="toc-text">📝 文章Front Matter配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%84-%E6%9B%B4%E6%96%B0%E6%B5%81%E7%A8%8B"><span class="toc-text">🔄 更新流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%BC%96%E8%BE%91%E5%86%85%E5%AE%B9"><span class="toc-text">1. 编辑内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88"><span class="toc-text">2. 本地预览</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%AE%BF%E9%97%AE%E9%A2%84%E8%A7%88"><span class="toc-text">3. 访问预览</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%A1-%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="toc-text">💡 实用技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Butterfly%E4%B8%BB%E9%A2%98%E7%89%B9%E6%AE%8A%E8%AF%AD%E6%B3%95"><span class="toc-text">Butterfly主题特殊语法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA%E6%A1%86"><span class="toc-text">提示框</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%89%E9%92%AE"><span class="toc-text">按钮</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE%E9%A1%B5"><span class="toc-text">标签页</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%8A-%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E5%BB%BA%E8%AE%AE"><span class="toc-text">📊 内容管理建议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9A%80-%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0"><span class="toc-text">🚀 部署更新</span></a></li></ol></li></ol>
+    <button id="closeButton"><i class="fa-solid fa-circle-xmark"></i></button>
+  </div>
+</div>
+<div class="wrapper post">
+  <head>
+    <!-- 引入 Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+  <main class="page-content" aria-label="Content">
+      <header class="header">
+        
+          <div class="tags">
+            <a href="/tags/Hexo/" class="tag"># Hexo</a><a href="/tags/%E6%95%99%E7%A8%8B/" class="tag"># 教程</a><a href="/tags/%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/" class="tag"># 博客管理</a>
+          </div>
+        
+        <h1 class="header-title" itemprop="headline">如何更新博客内容</h1>
+          <div class="post-meta">
+            最后更新: <time>Aug 28, 2025</time>
+            作者: <span itemprop="author">
+              <span itemprop="name">寒漓</span>
+            </span>
+            字数: <span class="post-count">490</span>
+            预计阅读时间: <span class="post-count">2min</span> 
+          </div>       
+        </header>
+          <div class="page-content"><h1 id="📚-Hexo博客内容更新指南"><a href="#📚-Hexo博客内容更新指南" class="headerlink" title="📚 Hexo博客内容更新指南"></a>📚 Hexo博客内容更新指南</h1><p>欢迎学习如何在你的Hexo博客中添加和更新内容！</p>
+<h2 id="🎯-创建新文章的方法"><a href="#🎯-创建新文章的方法" class="headerlink" title="🎯 创建新文章的方法"></a>🎯 创建新文章的方法</h2><h3 id="方法一：使用Hexo命令（推荐）"><a href="#方法一：使用Hexo命令（推荐）" class="headerlink" title="方法一：使用Hexo命令（推荐）"></a>方法一：使用Hexo命令（推荐）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建新文章</span></span><br><span class="line">npx hexo new <span class="string">&quot;文章标题&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建新页面</span></span><br><span class="line">npx hexo new page <span class="string">&quot;页面名称&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建草稿</span></span><br><span class="line">npx hexo new draft <span class="string">&quot;草稿标题&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="方法二：手动创建"><a href="#方法二：手动创建" class="headerlink" title="方法二：手动创建"></a>方法二：手动创建</h3><p>直接在 <code>source/_posts/</code> 目录下创建 <code>.md</code> 文件</p>
+<h2 id="📝-文章Front-Matter配置"><a href="#📝-文章Front-Matter配置" class="headerlink" title="📝 文章Front Matter配置"></a>📝 文章Front Matter配置</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span>                    <span class="comment"># 必需</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2025-08-27 10:00:00</span>         <span class="comment"># 发布日期</span></span><br><span class="line"><span class="attr">updated:</span> <span class="number">2025-08-27 12:00:00</span>      <span class="comment"># 更新日期（可选）</span></span><br><span class="line"><span class="attr">tags:</span>                             <span class="comment"># 标签</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签1</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签2</span></span><br><span class="line"><span class="attr">categories:</span>                       <span class="comment"># 分类</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">主分类</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">子分类</span></span><br><span class="line"><span class="attr">cover:</span> <span class="string">图片URL</span>                     <span class="comment"># 封面图片</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">文章描述</span>              <span class="comment"># 文章摘要</span></span><br><span class="line"><span class="attr">top:</span> <span class="literal">true</span>                         <span class="comment"># 置顶（可选）</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="🔄-更新流程"><a href="#🔄-更新流程" class="headerlink" title="🔄 更新流程"></a>🔄 更新流程</h2><h3 id="1-编辑内容"><a href="#1-编辑内容" class="headerlink" title="1. 编辑内容"></a>1. 编辑内容</h3><ul>
+<li>修改现有文章或创建新文章</li>
+<li>使用Markdown语法编写内容</li>
+</ul>
+<h3 id="2-本地预览"><a href="#2-本地预览" class="headerlink" title="2. 本地预览"></a>2. 本地预览</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 清理缓存</span></span><br><span class="line">npx hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成静态文件</span></span><br><span class="line">npx hexo generate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动本地服务器</span></span><br><span class="line">npx hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-访问预览"><a href="#3-访问预览" class="headerlink" title="3. 访问预览"></a>3. 访问预览</h3><p>打开浏览器访问：<code>http://localhost:4000</code></p>
+<h2 id="💡-实用技巧"><a href="#💡-实用技巧" class="headerlink" title="💡 实用技巧"></a>💡 实用技巧</h2><h3 id="Butterfly主题特殊语法"><a href="#Butterfly主题特殊语法" class="headerlink" title="Butterfly主题特殊语法"></a>Butterfly主题特殊语法</h3><h4 id="提示框"><a href="#提示框" class="headerlink" title="提示框"></a>提示框</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note success %&#125;</span><br><span class="line">成功提示</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">信息提示</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">警告提示</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">危险提示</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% btn &#x27;URL&#x27;, 按钮文字, 图标, 颜色 %&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="标签页"><a href="#标签页" class="headerlink" title="标签页"></a>标签页</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% tabs 标签页名称 %&#125;</span><br><span class="line">&lt;!-- tab 标签1 --&gt;</span><br><span class="line">内容1</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab 标签2 --&gt;</span><br><span class="line">内容2</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="📊-内容管理建议"><a href="#📊-内容管理建议" class="headerlink" title="📊 内容管理建议"></a>📊 内容管理建议</h2><ol>
+<li><strong>定期备份</strong>：定期备份 <code>source</code> 目录</li>
+<li><strong>图片管理</strong>：建议使用图床服务存储图片</li>
+<li><strong>SEO优化</strong>：合理设置标题、描述和标签</li>
+<li><strong>分类规划</strong>：建立清晰的分类体系</li>
+</ol>
+<h2 id="🚀-部署更新"><a href="#🚀-部署更新" class="headerlink" title="🚀 部署更新"></a>🚀 部署更新</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成并部署</span></span><br><span class="line">npx hexo generate --deploy</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或分步执行</span></span><br><span class="line">npx hexo generate</span><br><span class="line">npx hexo deploy</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>现在你已经掌握了更新博客内容的方法！开始创作你的精彩文章吧！ 🎉</p>
+</div>          
+          <nav class="post-nav">
+    
+    <a class="post-nav-item post-nav-prev" href="/2025/10/25/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F-%E6%97%B6%E9%97%B4%E7%9A%84%E7%8F%8D%E8%B4%B5/">
+      <div class="nav-arrow">&lt;&nbsp;NEWER</div>
+      <span class="post-title">时间的珍贵 - 关于慢下来的思考</span>
+    </a>
+    
+    
+    <a class="post-nav-item post-nav-next" href="/2025/08/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87Butterfly%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2/">
+      <div class="nav-arrow">OLDER&nbsp;&gt;</div>
+      <span class="post-title">我的第一篇Klise-enhanced主题博客</span>
+    </a>
+    
+  </nav>
+
+   </main>
+</div>
+
+  <footer class="footer">
+    <small class="footer_copyright">
+      <div id="bottom-inner">
+        © Site by 寒漓<br>
+        <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a> &
+        <a target="_blank" rel="noopener" href="https://github.com/g0dmao/hexo-theme-Klise-enhanced">Klise-enhanced</a>
+        <br>
+        <a target="_blank" rel="noopener" href="https://chinese-font.netlify.app/zh-cn/fonts/jhlst/%E4%BA%AC%E8%8F%AF%E8%80%81%E5%AE%8B%E4%BD%93v2_002">京華老宋体</a> & <a target="_blank" rel="noopener" href="https://chinese-font.netlify.app/zh-cn/">中文网字支持计划</a>
+        <br>
+        始于2025.
+        
+      </div>
+    </small>
+  </footer>
+  
+  
+
+    
+      <script src="/js/main.js"></script>
+    
+  
+  <script>
+    window.FPConfig = {
+      delay: 0,
+      ignoreKeywords: [],
+      maxRPS: 3,
+      hoverDelay: 50,
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  document.body.classList.add('loaded');
+});
+
+  </script>
+</body>
+</html>

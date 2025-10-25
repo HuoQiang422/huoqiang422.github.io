@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css' />
+  <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/jhlst/dist/%E4%BA%AC%E8%8F%AF%E8%80%81%E5%AE%8B%E4%BD%93v2_002/result.css' />  
+  
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>简单的快乐 - 发现生活中的小确幸 [ 寒漓 ]</title>
+
+  <link rel="icon" href="/img/favicon.ico">
+
+
+    <meta name="author" content="寒漓">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml " title="寒漓" type="application/atom+xml">
+
+
+  
+    <link rel="stylesheet" href="/css/main.css">
+  
+
+
+<script defer>
+  document.addEventListener('visibilitychange', function () {
+  if (document.visibilityState == 'hidden') {
+      normal_title = document.title;
+      document.title = '点一下';
+  } else document.title = normal_title;
+});
+
+</script>
+  <body data-theme="light" class="notransition">
+    <script defer>
+      const body = document.body;
+      const data = body.getAttribute("data-theme");
+      const initTheme = (state) => {
+        if (state === "dark") {
+          body.setAttribute("data-theme", "dark");
+        } else if (state === "light") {
+          body.removeAttribute("data-theme");
+        } else {
+          localStorage.setItem("theme", data);
+        }
+      };
+   
+      initTheme(localStorage.getItem("theme"));
+      
+      setTimeout(() => body.classList.remove("notransition"), 75);
+    </script>
+  <div class="navbar" role="navigation">
+    <nav class="menu">
+      <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+      <label for="menu-trigger">
+        <span class="menu-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+            />
+          </svg>
+        </span>
+      </label>
+      <a id="mode">
+        <svg
+          class="mode-sunny"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 512 512"
+        >
+          <title>LIGHT</title>
+          <line
+            x1="256"
+            y1="48"
+            x2="256"
+            y2="96"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="256"
+            y1="416"
+            x2="256"
+            y2="464"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="108.92"
+            x2="369.14"
+            y2="142.86"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="369.14"
+            x2="108.92"
+            y2="403.08"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="464"
+            y1="256"
+            x2="416"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="96"
+            y1="256"
+            x2="48"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="403.08"
+            x2="369.14"
+            y2="369.14"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="142.86"
+            x2="108.92"
+            y2="108.92"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <circle
+            cx="256"
+            cy="256"
+            r="80"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+        </svg>
+        <svg
+          class="mode-moon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 512 512"
+        >
+          <title>DARK</title>
+          <line
+            x1="256"
+            y1="48"
+            x2="256"
+            y2="96"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="256"
+            y1="416"
+            x2="256"
+            y2="464"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="108.92"
+            x2="369.14"
+            y2="142.86"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="369.14"
+            x2="108.92"
+            y2="403.08"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="464"
+            y1="256"
+            x2="416"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="96"
+            y1="256"
+            x2="48"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="403.08"
+            x2="369.14"
+            y2="369.14"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="142.86"
+            x2="108.92"
+            y2="108.92"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <circle
+            cx="256"
+            cy="256"
+            r="80"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+        </svg>
+      </a>
+      <div class="trigger">
+        <div class="trigger-container">
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/"> 主页</a>
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/tags/"> 标签</a>
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/categories/"> 类别</a>
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/archives/"> 档案馆</a>
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/about/"> 关于</a>
+          
+        </div>
+      </div>
+    </nav>
+  </div>
+  <button id="toTopBtn"><i class="fa-solid fa-hand-point-up " ></i></button>
+<button id="toggleButton"><i class="fa-solid fa-chart-bar " ></i></button>
+<div id="overlay" class="overlay">
+  <div class="content">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E7%A1%AE%E5%B9%B8%EF%BC%9F"><span class="toc-text">什么是小确幸？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8C%88-%E6%88%91%E7%9A%84%E5%B0%8F%E7%A1%AE%E5%B9%B8%E6%B8%85%E5%8D%95"><span class="toc-text">🌈 我的小确幸清单</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%85%E6%99%A8%E6%97%B6%E5%85%89"><span class="toc-text">清晨时光</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A5%E5%B8%B8%E7%9E%AC%E9%97%B4"><span class="toc-text">日常瞬间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9C%E6%99%9A%E5%AE%81%E9%9D%99"><span class="toc-text">夜晚宁静</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%A1-%E5%8F%91%E7%8E%B0%E5%BF%AB%E4%B9%90%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7"><span class="toc-text">💡 发现快乐的小技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%94%BE%E6%85%A2%E8%84%9A%E6%AD%A5"><span class="toc-text">1. 放慢脚步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%94%A8%E5%BF%83%E6%84%9F%E5%8F%97"><span class="toc-text">2. 用心感受</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%AE%B0%E5%BD%95%E7%BE%8E%E5%A5%BD"><span class="toc-text">3. 记录美好</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%AF-%E7%AE%80%E5%8D%95%E5%BF%AB%E4%B9%90%E7%9A%84%E5%93%B2%E5%AD%A6"><span class="toc-text">🎯 简单快乐的哲学</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%A5%E8%B6%B3%E5%B8%B8%E4%B9%90"><span class="toc-text">知足常乐</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B4%BB%E5%9C%A8%E5%BD%93%E4%B8%8B"><span class="toc-text">活在当下</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E5%B0%B1%E6%98%AF%E7%BE%8E"><span class="toc-text">简单就是美</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8C%B8-%E4%BB%8A%E5%A4%A9%E7%9A%84%E5%B0%8F%E7%A1%AE%E5%B9%B8"><span class="toc-text">🌸 今天的小确幸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%9D-%E5%BF%AB%E4%B9%90%E4%BC%A0%E9%80%92"><span class="toc-text">💝 快乐传递</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-text">结语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%A4%94-%E4%BA%92%E5%8A%A8%E6%97%B6%E9%97%B4"><span class="toc-text">🤔 互动时间</span></a></li></ol>
+    <button id="closeButton"><i class="fa-solid fa-circle-xmark"></i></button>
+  </div>
+</div>
+<div class="wrapper post">
+  <head>
+    <!-- 引入 Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+  <main class="page-content" aria-label="Content">
+      <header class="header">
+        
+          <div class="tags">
+            <a href="/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" class="tag"># 生活感悟</a><a href="/tags/%E5%B0%8F%E7%A1%AE%E5%B9%B8/" class="tag"># 小确幸</a><a href="/tags/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/" class="tag"># 心情随笔</a><a href="/tags/%E6%AD%A3%E8%83%BD%E9%87%8F/" class="tag"># 正能量</a>
+          </div>
+        
+        <h1 class="header-title" itemprop="headline">简单的快乐 - 发现生活中的小确幸</h1>
+          <div class="post-meta">
+            最后更新: <time>Oct 25, 2025</time>
+            作者: <span itemprop="author">
+              <span itemprop="name">寒漓</span>
+            </span>
+            字数: <span class="post-count">894</span>
+            预计阅读时间: <span class="post-count">2min</span> 
+          </div>       
+        </header>
+          <div class="page-content"><h2 id="什么是小确幸？"><a href="#什么是小确幸？" class="headerlink" title="什么是小确幸？"></a>什么是小确幸？</h2><p>“小确幸”这个词来自村上春树，指的是生活中微小而确实的幸福。它不需要轰轰烈烈，不需要惊天动地，就在我们身边，等待着被发现。</p>
+<h2 id="🌈-我的小确幸清单"><a href="#🌈-我的小确幸清单" class="headerlink" title="🌈 我的小确幸清单"></a>🌈 我的小确幸清单</h2><h3 id="清晨时光"><a href="#清晨时光" class="headerlink" title="清晨时光"></a>清晨时光</h3><ul>
+<li>被自然光唤醒，而不是闹钟</li>
+<li>第一口热咖啡的香醇</li>
+<li>看到植物长出新叶子</li>
+<li>收到朋友的早安问候</li>
+</ul>
+<h3 id="日常瞬间"><a href="#日常瞬间" class="headerlink" title="日常瞬间"></a>日常瞬间</h3><ul>
+<li>在书店偶遇一本好书</li>
+<li>公交车刚好到站</li>
+<li>雨后的清新空气</li>
+<li>猫咪主动跑来撒娇</li>
+</ul>
+<h3 id="夜晚宁静"><a href="#夜晚宁静" class="headerlink" title="夜晚宁静"></a>夜晚宁静</h3><ul>
+<li>洗完澡后的舒适感</li>
+<li>躺在干净的床单上</li>
+<li>看完一部好电影的满足</li>
+<li>和家人的晚餐时光</li>
+</ul>
+<h2 id="💡-发现快乐的小技巧"><a href="#💡-发现快乐的小技巧" class="headerlink" title="💡 发现快乐的小技巧"></a>💡 发现快乐的小技巧</h2><h3 id="1-放慢脚步"><a href="#1-放慢脚步" class="headerlink" title="1. 放慢脚步"></a>1. 放慢脚步</h3><p>当我们匆忙赶路时，很容易错过路边的风景。试着偶尔放慢脚步，你会发现：</p>
+<ul>
+<li>街角咖啡店的温暖灯光</li>
+<li>老爷爷遛狗的悠闲身影</li>
+<li>孩子们天真的笑声</li>
+<li>夕阳西下的美丽天空</li>
+</ul>
+<h3 id="2-用心感受"><a href="#2-用心感受" class="headerlink" title="2. 用心感受"></a>2. 用心感受</h3><p>用五感去体验生活：</p>
+<ul>
+<li><strong>视觉</strong>：观察光影的变化，色彩的搭配</li>
+<li><strong>听觉</strong>：聆听鸟鸣、雨声、音乐</li>
+<li><strong>嗅觉</strong>：感受花香、食物的香味</li>
+<li><strong>触觉</strong>：享受阳光的温暖、微风的轻抚</li>
+<li><strong>味觉</strong>：品尝食物的层次和变化</li>
+</ul>
+<h3 id="3-记录美好"><a href="#3-记录美好" class="headerlink" title="3. 记录美好"></a>3. 记录美好</h3><ul>
+<li>用手机拍下美丽的瞬间</li>
+<li>在日记里写下开心的事情</li>
+<li>和朋友分享快乐的经历</li>
+<li>制作属于自己的”快乐收藏夹”</li>
+</ul>
+<h2 id="🎯-简单快乐的哲学"><a href="#🎯-简单快乐的哲学" class="headerlink" title="🎯 简单快乐的哲学"></a>🎯 简单快乐的哲学</h2><h3 id="知足常乐"><a href="#知足常乐" class="headerlink" title="知足常乐"></a>知足常乐</h3><blockquote>
+<p>“知足者富，强行者有志。” —— 老子</p>
+</blockquote>
+<p>快乐不在于拥有多少，而在于珍惜已有的。当我们学会感恩现在拥有的一切时，快乐就会自然而然地涌现。</p>
+<h3 id="活在当下"><a href="#活在当下" class="headerlink" title="活在当下"></a>活在当下</h3><p>不要总是想着”等我有钱了就快乐了”、”等我升职了就快乐了”。快乐就在此时此刻，就在我们身边。</p>
+<h3 id="简单就是美"><a href="#简单就是美" class="headerlink" title="简单就是美"></a>简单就是美</h3><p>最简单的事情往往最能带来快乐：</p>
+<ul>
+<li>和朋友的一次谈心</li>
+<li>一顿家常便饭</li>
+<li>一个温暖的拥抱</li>
+<li>一句真诚的赞美</li>
+</ul>
+<h2 id="🌸-今天的小确幸"><a href="#🌸-今天的小确幸" class="headerlink" title="🌸 今天的小确幸"></a>🌸 今天的小确幸</h2><p>让我分享一下今天遇到的小确幸：</p>
+<ol>
+<li><strong>早晨</strong>：阳光透过窗帘洒在桌子上，形成了美丽的光斑</li>
+<li><strong>中午</strong>：在楼下小店买到了最后一个我喜欢的面包</li>
+<li><strong>下午</strong>：收到了久未联系的朋友发来的照片</li>
+<li><strong>傍晚</strong>：看到邻居家的小狗对我摇尾巴</li>
+</ol>
+<p>这些看似微不足道的小事，却让我的一天变得特别美好。</p>
+<h2 id="💝-快乐传递"><a href="#💝-快乐传递" class="headerlink" title="💝 快乐传递"></a>💝 快乐传递</h2><p>快乐是会传染的。当我们快乐时，也会让身边的人感到快乐：</p>
+<ul>
+<li><strong>微笑</strong>：给陌生人一个微笑</li>
+<li><strong>赞美</strong>：真诚地夸奖别人</li>
+<li><strong>帮助</strong>：力所能及地帮助他人</li>
+<li><strong>分享</strong>：和朋友分享好消息</li>
+</ul>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>生活中不缺少美，只是缺少发现美的眼睛。快乐也是如此，它一直都在那里，等待着我们去发现、去感受、去珍惜。</p>
+<p>让我们都成为快乐的收集者，在平凡的日子里，发现不平凡的美好。因为真正的快乐，往往就藏在最简单的事情里。</p>
+<hr>
+<p><em>愿你的每一天都有小确幸，愿你的生活充满简单的快乐。</em></p>
+<h2 id="🤔-互动时间"><a href="#🤔-互动时间" class="headerlink" title="🤔 互动时间"></a>🤔 互动时间</h2><p>在评论区分享一下：</p>
+<ul>
+<li>你今天遇到的小确幸是什么？</li>
+<li>什么简单的事情最能让你快乐？</li>
+<li>你有什么发现快乐的小秘诀吗？</li>
+</ul>
+<p>期待听到你的故事～</p>
+</div>          
+          <nav class="post-nav">
+    
+    
+    <a class="post-nav-item post-nav-next" href="/2025/10/25/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F-%E6%97%B6%E9%97%B4%E7%9A%84%E7%8F%8D%E8%B4%B5/">
+      <div class="nav-arrow">OLDER&nbsp;&gt;</div>
+      <span class="post-title">时间的珍贵 - 关于慢下来的思考</span>
+    </a>
+    
+  </nav>
+
+   </main>
+</div>
+
+  <footer class="footer">
+    <small class="footer_copyright">
+      <div id="bottom-inner">
+        © Site by 寒漓<br>
+        <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a> &
+        <a target="_blank" rel="noopener" href="https://github.com/g0dmao/hexo-theme-Klise-enhanced">Klise-enhanced</a>
+        <br>
+        <a target="_blank" rel="noopener" href="https://chinese-font.netlify.app/zh-cn/fonts/jhlst/%E4%BA%AC%E8%8F%AF%E8%80%81%E5%AE%8B%E4%BD%93v2_002">京華老宋体</a> & <a target="_blank" rel="noopener" href="https://chinese-font.netlify.app/zh-cn/">中文网字支持计划</a>
+        <br>
+        始于2025.
+        
+      </div>
+    </small>
+  </footer>
+  
+  
+
+    
+      <script src="/js/main.js"></script>
+    
+  
+  <script>
+    window.FPConfig = {
+      delay: 0,
+      ignoreKeywords: [],
+      maxRPS: 3,
+      hoverDelay: 50,
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  document.body.classList.add('loaded');
+});
+
+  </script>
+</body>
+</html>
