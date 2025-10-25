@@ -1,21 +1,20 @@
 ---
-title: 我的第一篇Butterfly主题博客
+title: 我的第一篇Klise-enhanced主题博客
 date: 2025-08-19 13:52:48
 tags: 
   - Hexo
-  - Butterfly
+  - Klise-enhanced
   - 博客
 categories: 
   - 技术分享
-cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png
-description: 这是我使用Butterfly主题创建的第一篇博客文章，展示了主题的各种特性和功能。
+description: 这是我使用Klise-enhanced主题创建的第一篇博客文章，展示了主题的简洁优雅特性。
 ---
 
-欢迎来到我的博客！这是使用Hexo和Butterfly主题创建的第一篇文章。
+欢迎来到我的博客！这是使用Hexo和Klise-enhanced主题创建的第一篇文章。
 
-## 🎨 Butterfly主题特色
+## 🎨 Klise-enhanced主题特色
 
-Butterfly是一个功能丰富、美观大方的Hexo主题，具有以下特点：
+Klise-enhanced是一个简洁、优雅的Hexo主题，具有以下特点：
 
 ### ✨ 主要特性
 
@@ -68,33 +67,27 @@ for i in range(10):
 
 ### 提示框
 
-{% note success %}
-这是一个成功提示框！
-{% endnote %}
+> ✅ **成功提示：** 这是一个成功提示框！
 
-{% note info %}
-这是一个信息提示框！
-{% endnote %}
+> ℹ️ **信息提示：** 这是一个信息提示框！
 
-{% note warning %}
-这是一个警告提示框！
-{% endnote %}
+> ⚠️ **警告提示：** 这是一个警告提示框！
 
-### 按钮
+### 链接
 
-{% btn 'https://butterfly.js.org/', Butterfly官网, far fa-hand-point-right, blue larger %}
+[Klise-enhanced主题GitHub仓库](https://github.com/g0dmao/hexo-theme-Klise-enhanced)
 
 ## 🌈 总结
 
-Butterfly主题为Hexo博客提供了：
+Klise-enhanced主题为Hexo博客提供了：
 
-1. **美观的界面设计**
-2. **丰富的功能特性**
-3. **良好的用户体验**
-4. **强大的定制能力**
+1. **简洁优雅的界面设计**
+2. **舒适的阅读体验**
+3. **快速的加载速度**
+4. **良好的响应式支持**
 
 感谢你的阅读！如果你喜欢这个主题，不妨给它一个⭐️！
 
 ---
 
-*本文展示了Butterfly主题的基本功能，更多高级特性等待你去探索！*
+*本文展示了Klise-enhanced主题的基本功能，享受简洁优雅的博客体验！*
