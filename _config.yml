@@ -102,7 +102,7 @@ theme: klise-enhanced
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/HuoQiang422/HuoQiang422.github.io.git
+  repo: git@github.com:HuoQiang422/HuoQiang422.github.io.git
   branch: main
 # Search
 search:
