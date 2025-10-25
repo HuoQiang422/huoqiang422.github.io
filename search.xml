@@ -19,127 +19,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>如何更新博客内容</title>
-    <url>/2025/08/27/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9/</url>
-    <content><![CDATA[<h1 id="📚-Hexo博客内容更新指南"><a href="#📚-Hexo博客内容更新指南" class="headerlink" title="📚 Hexo博客内容更新指南"></a>📚 Hexo博客内容更新指南</h1><p>欢迎学习如何在你的Hexo博客中添加和更新内容！</p>
-<h2 id="🎯-创建新文章的方法"><a href="#🎯-创建新文章的方法" class="headerlink" title="🎯 创建新文章的方法"></a>🎯 创建新文章的方法</h2><h3 id="方法一：使用Hexo命令（推荐）"><a href="#方法一：使用Hexo命令（推荐）" class="headerlink" title="方法一：使用Hexo命令（推荐）"></a>方法一：使用Hexo命令（推荐）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建新文章</span></span><br><span class="line">npx hexo new <span class="string">&quot;文章标题&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建新页面</span></span><br><span class="line">npx hexo new page <span class="string">&quot;页面名称&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建草稿</span></span><br><span class="line">npx hexo new draft <span class="string">&quot;草稿标题&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="方法二：手动创建"><a href="#方法二：手动创建" class="headerlink" title="方法二：手动创建"></a>方法二：手动创建</h3><p>直接在 <code>source/_posts/</code> 目录下创建 <code>.md</code> 文件</p>
-<h2 id="📝-文章Front-Matter配置"><a href="#📝-文章Front-Matter配置" class="headerlink" title="📝 文章Front Matter配置"></a>📝 文章Front Matter配置</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span>                    <span class="comment"># 必需</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2025-08-27 10:00:00</span>         <span class="comment"># 发布日期</span></span><br><span class="line"><span class="attr">updated:</span> <span class="number">2025-08-27 12:00:00</span>      <span class="comment"># 更新日期（可选）</span></span><br><span class="line"><span class="attr">tags:</span>                             <span class="comment"># 标签</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签1</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签2</span></span><br><span class="line"><span class="attr">categories:</span>                       <span class="comment"># 分类</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">主分类</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">子分类</span></span><br><span class="line"><span class="attr">cover:</span> <span class="string">图片URL</span>                     <span class="comment"># 封面图片</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">文章描述</span>              <span class="comment"># 文章摘要</span></span><br><span class="line"><span class="attr">top:</span> <span class="literal">true</span>                         <span class="comment"># 置顶（可选）</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="🔄-更新流程"><a href="#🔄-更新流程" class="headerlink" title="🔄 更新流程"></a>🔄 更新流程</h2><h3 id="1-编辑内容"><a href="#1-编辑内容" class="headerlink" title="1. 编辑内容"></a>1. 编辑内容</h3><ul>
-<li>修改现有文章或创建新文章</li>
-<li>使用Markdown语法编写内容</li>
-</ul>
-<h3 id="2-本地预览"><a href="#2-本地预览" class="headerlink" title="2. 本地预览"></a>2. 本地预览</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清理缓存</span></span><br><span class="line">npx hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成静态文件</span></span><br><span class="line">npx hexo generate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动本地服务器</span></span><br><span class="line">npx hexo server</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-访问预览"><a href="#3-访问预览" class="headerlink" title="3. 访问预览"></a>3. 访问预览</h3><p>打开浏览器访问：<code>http://localhost:4000</code></p>
-<h2 id="💡-实用技巧"><a href="#💡-实用技巧" class="headerlink" title="💡 实用技巧"></a>💡 实用技巧</h2><h3 id="Butterfly主题特殊语法"><a href="#Butterfly主题特殊语法" class="headerlink" title="Butterfly主题特殊语法"></a>Butterfly主题特殊语法</h3><h4 id="提示框"><a href="#提示框" class="headerlink" title="提示框"></a>提示框</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note success %&#125;</span><br><span class="line">成功提示</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">信息提示</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">警告提示</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">危险提示</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% btn &#x27;URL&#x27;, 按钮文字, 图标, 颜色 %&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="标签页"><a href="#标签页" class="headerlink" title="标签页"></a>标签页</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% tabs 标签页名称 %&#125;</span><br><span class="line">&lt;!-- tab 标签1 --&gt;</span><br><span class="line">内容1</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab 标签2 --&gt;</span><br><span class="line">内容2</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="📊-内容管理建议"><a href="#📊-内容管理建议" class="headerlink" title="📊 内容管理建议"></a>📊 内容管理建议</h2><ol>
-<li><strong>定期备份</strong>：定期备份 <code>source</code> 目录</li>
-<li><strong>图片管理</strong>：建议使用图床服务存储图片</li>
-<li><strong>SEO优化</strong>：合理设置标题、描述和标签</li>
-<li><strong>分类规划</strong>：建立清晰的分类体系</li>
-</ol>
-<h2 id="🚀-部署更新"><a href="#🚀-部署更新" class="headerlink" title="🚀 部署更新"></a>🚀 部署更新</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 生成并部署</span></span><br><span class="line">npx hexo generate --deploy</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或分步执行</span></span><br><span class="line">npx hexo generate</span><br><span class="line">npx hexo deploy</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>现在你已经掌握了更新博客内容的方法！开始创作你的精彩文章吧！ 🎉</p>
-]]></content>
-      <categories>
-        <category>使用指南</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>教程</tag>
-        <tag>博客管理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的第一篇Klise-enhanced主题博客</title>
-    <url>/2025/08/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87Butterfly%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>欢迎来到我的博客！这是使用Hexo和Klise-enhanced主题创建的第一篇文章。</p>
-<h2 id="🎨-Klise-enhanced主题特色"><a href="#🎨-Klise-enhanced主题特色" class="headerlink" title="🎨 Klise-enhanced主题特色"></a>🎨 Klise-enhanced主题特色</h2><p>Klise-enhanced是一个简洁、优雅的Hexo主题，具有以下特点：</p>
-<h3 id="✨-主要特性"><a href="#✨-主要特性" class="headerlink" title="✨ 主要特性"></a>✨ 主要特性</h3><ul>
-<li><strong>响应式设计</strong> - 完美适配各种设备</li>
-<li><strong>夜间模式</strong> - 保护你的眼睛</li>
-<li><strong>代码高亮</strong> - 支持多种编程语言</li>
-<li><strong>搜索功能</strong> - 快速找到你想要的内容</li>
-<li><strong>评论系统</strong> - 与读者互动交流</li>
-</ul>
-<h3 id="🛠️-技术栈"><a href="#🛠️-技术栈" class="headerlink" title="🛠️ 技术栈"></a>🛠️ 技术栈</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 示例代码：JavaScript函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">greetVisitor</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`欢迎 <span class="subst">$&#123;name&#125;</span> 访问我的博客！`</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">`Hello, <span class="subst">$&#123;name&#125;</span>!`</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">greetVisitor</span>(<span class="string">&#x27;朋友&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Python示例</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fibonacci</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;生成斐波那契数列&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">if</span> n &lt;= <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> n</span><br><span class="line">    <span class="keyword">return</span> fibonacci(n-<span class="number">1</span>) + fibonacci(n-<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出前10个斐波那契数</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;F(<span class="subst">&#123;i&#125;</span>) = <span class="subst">&#123;fibonacci(i)&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="📊-数据展示"><a href="#📊-数据展示" class="headerlink" title="📊 数据展示"></a>📊 数据展示</h2><table>
-<thead>
-<tr>
-<th>特性</th>
-<th>支持程度</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>响应式</td>
-<td>⭐⭐⭐⭐⭐</td>
-<td>完美支持</td>
-</tr>
-<tr>
-<td>速度</td>
-<td>⭐⭐⭐⭐⭐</td>
-<td>加载迅速</td>
-</tr>
-<tr>
-<td>SEO</td>
-<td>⭐⭐⭐⭐⭐</td>
-<td>搜索引擎友好</td>
-</tr>
-<tr>
-<td>定制性</td>
-<td>⭐⭐⭐⭐⭐</td>
-<td>高度可定制</td>
-</tr>
-</tbody></table>
-<h2 id="🎯-功能演示"><a href="#🎯-功能演示" class="headerlink" title="🎯 功能演示"></a>🎯 功能演示</h2><h3 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h3><blockquote>
-<p>这是一个引用块的示例。Butterfly主题让引用内容看起来更加优雅美观。</p>
-<p>—— 博客作者</p>
-</blockquote>
-<h3 id="提示框"><a href="#提示框" class="headerlink" title="提示框"></a>提示框</h3><blockquote>
-<p>✅ <strong>成功提示：</strong> 这是一个成功提示框！</p>
-</blockquote>
-<blockquote>
-<p>ℹ️ <strong>信息提示：</strong> 这是一个信息提示框！</p>
-</blockquote>
-<blockquote>
-<p>⚠️ <strong>警告提示：</strong> 这是一个警告提示框！</p>
-</blockquote>
-<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p><a href="https://github.com/g0dmao/hexo-theme-Klise-enhanced">Klise-enhanced主题GitHub仓库</a></p>
-<h2 id="🌈-总结"><a href="#🌈-总结" class="headerlink" title="🌈 总结"></a>🌈 总结</h2><p>Klise-enhanced主题为Hexo博客提供了：</p>
-<ol>
-<li><strong>简洁优雅的界面设计</strong></li>
-<li><strong>舒适的阅读体验</strong></li>
-<li><strong>快速的加载速度</strong></li>
-<li><strong>良好的响应式支持</strong></li>
-</ol>
-<p>感谢你的阅读！如果你喜欢这个主题，不妨给它一个⭐️！</p>
-<hr>
-<p><em>本文展示了Klise-enhanced主题的基本功能，享受简洁优雅的博客体验！</em></p>
-]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Klise-enhanced</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>书单推荐</title>
     <url>/2025/10/25/%E4%B9%A6%E5%8D%95%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<h1 id="书单整理与推荐"><a href="#书单整理与推荐" class="headerlink" title="书单整理与推荐"></a>书单整理与推荐</h1><p>这是一份根据您提供的100本书单，进行分类、简介和推荐阅读顺序的整理文件。</p>
@@ -524,6 +403,127 @@
         <tag>时间管理</tag>
         <tag>人生思考</tag>
         <tag>慢生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何更新博客内容</title>
+    <url>/2025/08/27/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9/</url>
+    <content><![CDATA[<h1 id="📚-Hexo博客内容更新指南"><a href="#📚-Hexo博客内容更新指南" class="headerlink" title="📚 Hexo博客内容更新指南"></a>📚 Hexo博客内容更新指南</h1><p>欢迎学习如何在你的Hexo博客中添加和更新内容！</p>
+<h2 id="🎯-创建新文章的方法"><a href="#🎯-创建新文章的方法" class="headerlink" title="🎯 创建新文章的方法"></a>🎯 创建新文章的方法</h2><h3 id="方法一：使用Hexo命令（推荐）"><a href="#方法一：使用Hexo命令（推荐）" class="headerlink" title="方法一：使用Hexo命令（推荐）"></a>方法一：使用Hexo命令（推荐）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建新文章</span></span><br><span class="line">npx hexo new <span class="string">&quot;文章标题&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建新页面</span></span><br><span class="line">npx hexo new page <span class="string">&quot;页面名称&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建草稿</span></span><br><span class="line">npx hexo new draft <span class="string">&quot;草稿标题&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="方法二：手动创建"><a href="#方法二：手动创建" class="headerlink" title="方法二：手动创建"></a>方法二：手动创建</h3><p>直接在 <code>source/_posts/</code> 目录下创建 <code>.md</code> 文件</p>
+<h2 id="📝-文章Front-Matter配置"><a href="#📝-文章Front-Matter配置" class="headerlink" title="📝 文章Front Matter配置"></a>📝 文章Front Matter配置</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span>                    <span class="comment"># 必需</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2025-08-27 10:00:00</span>         <span class="comment"># 发布日期</span></span><br><span class="line"><span class="attr">updated:</span> <span class="number">2025-08-27 12:00:00</span>      <span class="comment"># 更新日期（可选）</span></span><br><span class="line"><span class="attr">tags:</span>                             <span class="comment"># 标签</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签1</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签2</span></span><br><span class="line"><span class="attr">categories:</span>                       <span class="comment"># 分类</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">主分类</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">子分类</span></span><br><span class="line"><span class="attr">cover:</span> <span class="string">图片URL</span>                     <span class="comment"># 封面图片</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">文章描述</span>              <span class="comment"># 文章摘要</span></span><br><span class="line"><span class="attr">top:</span> <span class="literal">true</span>                         <span class="comment"># 置顶（可选）</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="🔄-更新流程"><a href="#🔄-更新流程" class="headerlink" title="🔄 更新流程"></a>🔄 更新流程</h2><h3 id="1-编辑内容"><a href="#1-编辑内容" class="headerlink" title="1. 编辑内容"></a>1. 编辑内容</h3><ul>
+<li>修改现有文章或创建新文章</li>
+<li>使用Markdown语法编写内容</li>
+</ul>
+<h3 id="2-本地预览"><a href="#2-本地预览" class="headerlink" title="2. 本地预览"></a>2. 本地预览</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清理缓存</span></span><br><span class="line">npx hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成静态文件</span></span><br><span class="line">npx hexo generate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动本地服务器</span></span><br><span class="line">npx hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-访问预览"><a href="#3-访问预览" class="headerlink" title="3. 访问预览"></a>3. 访问预览</h3><p>打开浏览器访问：<code>http://localhost:4000</code></p>
+<h2 id="💡-实用技巧"><a href="#💡-实用技巧" class="headerlink" title="💡 实用技巧"></a>💡 实用技巧</h2><h3 id="Butterfly主题特殊语法"><a href="#Butterfly主题特殊语法" class="headerlink" title="Butterfly主题特殊语法"></a>Butterfly主题特殊语法</h3><h4 id="提示框"><a href="#提示框" class="headerlink" title="提示框"></a>提示框</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note success %&#125;</span><br><span class="line">成功提示</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">信息提示</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">警告提示</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">危险提示</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% btn &#x27;URL&#x27;, 按钮文字, 图标, 颜色 %&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="标签页"><a href="#标签页" class="headerlink" title="标签页"></a>标签页</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% tabs 标签页名称 %&#125;</span><br><span class="line">&lt;!-- tab 标签1 --&gt;</span><br><span class="line">内容1</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab 标签2 --&gt;</span><br><span class="line">内容2</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="📊-内容管理建议"><a href="#📊-内容管理建议" class="headerlink" title="📊 内容管理建议"></a>📊 内容管理建议</h2><ol>
+<li><strong>定期备份</strong>：定期备份 <code>source</code> 目录</li>
+<li><strong>图片管理</strong>：建议使用图床服务存储图片</li>
+<li><strong>SEO优化</strong>：合理设置标题、描述和标签</li>
+<li><strong>分类规划</strong>：建立清晰的分类体系</li>
+</ol>
+<h2 id="🚀-部署更新"><a href="#🚀-部署更新" class="headerlink" title="🚀 部署更新"></a>🚀 部署更新</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 生成并部署</span></span><br><span class="line">npx hexo generate --deploy</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或分步执行</span></span><br><span class="line">npx hexo generate</span><br><span class="line">npx hexo deploy</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>现在你已经掌握了更新博客内容的方法！开始创作你的精彩文章吧！ 🎉</p>
+]]></content>
+      <categories>
+        <category>使用指南</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>教程</tag>
+        <tag>博客管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的第一篇Klise-enhanced主题博客</title>
+    <url>/2025/08/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87Butterfly%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>欢迎来到我的博客！这是使用Hexo和Klise-enhanced主题创建的第一篇文章。</p>
+<h2 id="🎨-Klise-enhanced主题特色"><a href="#🎨-Klise-enhanced主题特色" class="headerlink" title="🎨 Klise-enhanced主题特色"></a>🎨 Klise-enhanced主题特色</h2><p>Klise-enhanced是一个简洁、优雅的Hexo主题，具有以下特点：</p>
+<h3 id="✨-主要特性"><a href="#✨-主要特性" class="headerlink" title="✨ 主要特性"></a>✨ 主要特性</h3><ul>
+<li><strong>响应式设计</strong> - 完美适配各种设备</li>
+<li><strong>夜间模式</strong> - 保护你的眼睛</li>
+<li><strong>代码高亮</strong> - 支持多种编程语言</li>
+<li><strong>搜索功能</strong> - 快速找到你想要的内容</li>
+<li><strong>评论系统</strong> - 与读者互动交流</li>
+</ul>
+<h3 id="🛠️-技术栈"><a href="#🛠️-技术栈" class="headerlink" title="🛠️ 技术栈"></a>🛠️ 技术栈</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 示例代码：JavaScript函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">greetVisitor</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`欢迎 <span class="subst">$&#123;name&#125;</span> 访问我的博客！`</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">`Hello, <span class="subst">$&#123;name&#125;</span>!`</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">greetVisitor</span>(<span class="string">&#x27;朋友&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Python示例</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fibonacci</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;生成斐波那契数列&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">if</span> n &lt;= <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> n</span><br><span class="line">    <span class="keyword">return</span> fibonacci(n-<span class="number">1</span>) + fibonacci(n-<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出前10个斐波那契数</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;F(<span class="subst">&#123;i&#125;</span>) = <span class="subst">&#123;fibonacci(i)&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="📊-数据展示"><a href="#📊-数据展示" class="headerlink" title="📊 数据展示"></a>📊 数据展示</h2><table>
+<thead>
+<tr>
+<th>特性</th>
+<th>支持程度</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>响应式</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>完美支持</td>
+</tr>
+<tr>
+<td>速度</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>加载迅速</td>
+</tr>
+<tr>
+<td>SEO</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>搜索引擎友好</td>
+</tr>
+<tr>
+<td>定制性</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>高度可定制</td>
+</tr>
+</tbody></table>
+<h2 id="🎯-功能演示"><a href="#🎯-功能演示" class="headerlink" title="🎯 功能演示"></a>🎯 功能演示</h2><h3 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h3><blockquote>
+<p>这是一个引用块的示例。Butterfly主题让引用内容看起来更加优雅美观。</p>
+<p>—— 博客作者</p>
+</blockquote>
+<h3 id="提示框"><a href="#提示框" class="headerlink" title="提示框"></a>提示框</h3><blockquote>
+<p>✅ <strong>成功提示：</strong> 这是一个成功提示框！</p>
+</blockquote>
+<blockquote>
+<p>ℹ️ <strong>信息提示：</strong> 这是一个信息提示框！</p>
+</blockquote>
+<blockquote>
+<p>⚠️ <strong>警告提示：</strong> 这是一个警告提示框！</p>
+</blockquote>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p><a href="https://github.com/g0dmao/hexo-theme-Klise-enhanced">Klise-enhanced主题GitHub仓库</a></p>
+<h2 id="🌈-总结"><a href="#🌈-总结" class="headerlink" title="🌈 总结"></a>🌈 总结</h2><p>Klise-enhanced主题为Hexo博客提供了：</p>
+<ol>
+<li><strong>简洁优雅的界面设计</strong></li>
+<li><strong>舒适的阅读体验</strong></li>
+<li><strong>快速的加载速度</strong></li>
+<li><strong>良好的响应式支持</strong></li>
+</ol>
+<p>感谢你的阅读！如果你喜欢这个主题，不妨给它一个⭐️！</p>
+<hr>
+<p><em>本文展示了Klise-enhanced主题的基本功能，享受简洁优雅的博客体验！</em></p>
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Klise-enhanced</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
   <entry>
