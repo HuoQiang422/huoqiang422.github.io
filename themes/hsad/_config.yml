@@ -1,0 +1,58 @@
+# ============================================================
+# hsad Theme — 寒漓 博客配置
+# ============================================================
+
+# --- 侧栏视觉 ---
+avatar: /images/avatar.jpg
+sidebar_background: /images/background.png
+accent_color: '#5b7a9a'
+accent_soft: '#dce4ec'
+
+# --- 站点标识 ---
+brand_name: 寒漓
+brand_subtitle: 写一点留给时间的话
+sidebar_note: 黄土高原上的故事，慢慢写，慢慢读。
+
+# --- 首页摘要长度（中文字数） ---
+excerpt_length: 80
+
+# --- 导航菜单 ---
+menu:
+  - name: 首页
+    path: /
+  - name: 归档
+    path: /archives/
+  - name: 分类
+    path: /categories/
+  - name: 标签
+    path: /tags/
+  - name: 人物
+    path: /characters/
+  - name: 关于
+    path: /about/
+
+# --- 社交链接 ---
+social:
+  - name: GitHub
+    url: https://github.com/HuoQiang422
+  - name: E-Mail
+    url: mailto:huoqiang422@gmail.com
+
+# --- 页脚 ---
+footer:
+  text: 写下想留下的，再让时间替你排好顺序。
+  support:
+    enable: false
+    title: ''
+    link: ''
+    logo: ''
+    prefix: ''
+    suffix: ''
+  license_name: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans
+
+# --- Hero 区（未启用） ---
+hero:
+  title: ''
+  kicker: ''
+  description: ''
